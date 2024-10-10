@@ -6,21 +6,21 @@ de la clase Cl_profesor.
 Haga un programa que haga uso de la misma clase Cl_profesor del ejercicio anterior, lea los
 datos de un profesor contratado y reporte su ingreso total. */
 
-import Cl_contratado from "./JS/Cl_contratado.js";
+import Cl_contratado from "./Cl_contratado.js";
 
-let cont1 = new Cl_contratado ("Rfael", 30, 15);
+let cont1 = new Cl_contratado ("Rafael", 30, 15);
 let cont2 = new Cl_contratado ("Felicia", 30, 20);
 
 
 let salida = document.getElementById("salida");
 
 salida.innerHTML= `
-Nombre del profesor fijo: ${cont1.nombre}
-<br>Monto del bono: ${cont1.bono}
+Nombre del profesor contratado: ${cont1.nombre}
+<br>Monto del bono: ${cont1.bono}$
 <br>Cantidad de horas: ${cont1.horas}
-<br>Ingreso total del profesor: ${cont1.ingresoTotal()}
+<br>Ingreso total del profesor: ${cont1.ingresoTotal()}$
 <br><br>
-<br>Nombre del profesor fijo: ${cont2.nombre}
-<br>Monto del bono:${cont2.bono}
+<br>Nombre del profesor contratado: ${cont2.nombre}
+<br>Monto del bono:${cont2.bono}$
 <br>Monto del horas:${cont2.horas}
-<br>Ingreso total del profesor ${cont2.ingresoTotal()}`;
+<br>Ingreso total del profesor ${cont2.ingresoTotal()}`+"$";
